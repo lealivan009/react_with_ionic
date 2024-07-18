@@ -1,15 +1,16 @@
 import React from 'react';
 import { IonApp, IonContent } from '@ionic/react';
-import Toolbar from '../components/Toolbar';
-import Menu from '../components/Menu';
-import Routes from '../routes/routes';
+import Menu from '../../components/Menu';
+import Routes from '../../routes/routes';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
 const MainLayout: React.FC = () => (
   <IonApp>
     <Menu />
-    <Toolbar mode='md' color='secondary' />
+    <Navbar color='secondary' />
+    {/* <Footer color='secondary' /> */}
     <IonContent id="main-content">
-      <Menu />
       <Routes />
     </IonContent>
   </IonApp>

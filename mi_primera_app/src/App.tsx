@@ -19,12 +19,12 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import MainLayout from './pages/MainLayout';
+import MainLayout from './pages/layout/MainLayout';
 
 setupIonicReact();
 
 const App: React.FC = () => (
-  <MainLayout/>
+  <MainLayout />
 );
 
 export default App;
